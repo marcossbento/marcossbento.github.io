@@ -1,0 +1,51 @@
+header {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+/* Footer configurations */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-buttons img {
+    width: 30px;
+    height: 30px;
+}
+/*---------------------*/
