@@ -31,6 +31,17 @@ body{
     cursor: pointer;
     transition: .2s;
 }
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #ffffff;
+}
+
  /*Header Style */
 header{
     padding: 40px 4%;
@@ -94,3 +105,48 @@ section.topo-do-site .flex{
     margin: 40px 0;
 }
 
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*SKILL STYLES*/
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.skills .skills-box{
+    color: #ffffffd3;
+    padding: 40px 4%;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.skills .skills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff77;
+}
+
+.skills .skills-box i{
+    font-size: 70px;
+    color:#ffffff
+}
+
+.skills .skills-box h3{
+    font-size: 28px;
+    margin: 20px 0;
+}
