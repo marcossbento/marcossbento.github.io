@@ -42,6 +42,11 @@ h2.titulo span{
     color: #ffffff;
 }
 
+button:hover{
+    box-shadow: 0px 0px 8px #fff;
+    transform: scale(1.05);
+}
+
  /*Header Style */
 header{
     padding: 40px 4%;
@@ -74,11 +79,6 @@ header nav ul li{
     padding: 0 40px;
 }
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #fff;
-    transform: scale(1.05);
-}
-
 /* Topo do site Style */
 section.topo-do-site{
     padding: 40px 4%;
@@ -94,10 +94,16 @@ section.topo-do-site .flex{
     font-size: 42px;
     color: #fff;
     line-height: 40px;
+    border-right: 4px solid aqua;
+    width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(12),
+    blinking 0.5s infinite step-end alternate;
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #fff;
+    color: aqua;
 }
 
 .topo-do-site .txt-topo-site p{
@@ -119,12 +125,24 @@ section.topo-do-site .flex{
     }
 }
 
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent
+    }
+}
+
 /*SKILL STYLES*/
-section.especialidades{
+section.skills{
     padding: 40px 4%;
 }
 
-section.especialidades .flex{
+section.skills .flex{
     gap: 60px;
 }
 
@@ -149,4 +167,64 @@ section.especialidades .flex{
 .skills .skills-box h3{
     font-size: 28px;
     margin: 20px 0;
+}
+
+/* SOBRE STYLES */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section .sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+    width: 50%;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: aqua;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* PROJETOS STYLES */
+section.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+}
+
+img-port{
+    width: 360px;
+    height: 460px;
+    background-color: aqua;
+    border-radius: 20px;
 }
