@@ -95,10 +95,10 @@ section.topo-do-site .flex{
     color: #fff;
     line-height: 40px;
     border-right: 4px solid aqua;
-    width: 12ch;
+    width: 0;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(12),
+    animation: typing 6s steps(12) infinite,
     blinking 0.5s infinite step-end alternate;
 }
 
@@ -126,7 +126,19 @@ section.topo-do-site .flex{
 }
 
 @keyframes typing {
-    from {
+    20% {
+        width: 11ch
+    }
+
+    70% {
+        width: 11ch
+    }
+
+    85% {
+        width: 0
+    }
+
+    100% {
         width: 0
     }
 }
@@ -220,11 +232,42 @@ section.projetos{
 
 section.projetos .flex{
     justify-content: space-around;
+    margin-top: 60px;
 }
 
-img-port{
+.img-port{
     width: 360px;
     height: 460px;
-    background-color: aqua;
-    border-radius: 20px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: .8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #08080871;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
