@@ -342,6 +342,8 @@ section.projetos .flex{
     background-color: #08080871;
     border-radius: 40px;
     display: flex;
+    white-space: nowrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 24px;
@@ -350,6 +352,12 @@ section.projetos .flex{
     opacity: 0;
     transition: .5s;
 }
+
+.overlay img {
+    width: 80px;
+}
+
+
 
 .overlay:hover{
     opacity: 1;
