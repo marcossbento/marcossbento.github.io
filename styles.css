@@ -51,6 +51,24 @@ button:hover{
     transform: scale(1.05);
 }
 
+#btn-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #btn-topo:hover {
+    background-color: #333;
+  }
+
  /*Header Style */
 header{
     padding: 40px 4%;
@@ -82,6 +100,10 @@ header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 }
+
+
+
+
 
 /* MENU MOBILE STYLE */
 
@@ -300,7 +322,7 @@ section .sobre .flex{
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
-    transition: .2s;
+    transition: .4s;
 }
 
 /* PROJETOS STYLES */
@@ -363,14 +385,14 @@ section.projetos .flex{
     opacity: 1;
 }
 
-.linguagem{
-    /* display: flex; */
+/* .linguagem{
+    display: flex; 
     align-items: center;
     justify-content: space-evenly;
     width: 40px;
     opacity: 80%;
     margin-left: 20px;
-}
+} */
 
 @media screen and (max-width: 1020px) {
     /* CLASSES GERAIS */
@@ -452,6 +474,12 @@ section.projetos .flex{
 
     section.projetos .flex{
         gap: 60px;
+    }
+
+    /* PROJETOS */
+
+    .overlay{
+        opacity: 1;
     }
 
 }
