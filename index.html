@@ -8,6 +8,9 @@
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--  -->
+
+    <script src="menu.js" defer></script>
+
     <title>Marcos Bento's Portfólio</title>
 </head>
 
@@ -22,24 +25,44 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Tecnologias</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Tecnologias</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
             
             <div class="btn-contato">
-                <a href="#">
+                <a href="#sobre">
                     <button>Contato</button>
                 </a>
             </div>
 
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Tecnologias</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#sobre">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
 
     <main>
-        <section class ="topo-do-site">
+        <section class ="topo-do-site" id ="home">
             <div class ="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -47,7 +70,7 @@
                         <p>Desenvolvedor BackEnd Java</p>
                         
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#sobre">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -60,7 +83,7 @@
             </div>
         </section> <!-- topo-do-site -->
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="interface">
                 <h2 class = "titulo">MINHAS <span>SKILLS:</span></h2>
                 <div class="flex">
@@ -84,7 +107,7 @@
             </div>
         </section><!-- skills -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -94,6 +117,7 @@
                         <h2>PRAZER, <span>SOU MARCOS BENTO.</span></h2>
                         <p>Sou desenvolvedor Backend em busca de oportunidades de estágio nas áreas de desenvolvimento e suporte. Atualmente, estou cursando o 4º semestre de Análise e Desenvolvimento de Sistemas no IFSP de Araraquara - SP e estou comprometido em aprimorar continuamente minhas habilidades.
                             Tenho experiência em linguagens como Java e C e estou familiarizado com bancos de dados MySQL e Oracle SQL. Além disso, estou dedicando meu tempo a projetos pessoais, onde estou aprofundando meu conhecimento em tecnologias modernas, como Spring Boot.</p>
+                        <h2><span>CONTATO:</span></h2>
                         <div class="btn-social">
                             <a href="https://github.com/marcossbento"><button><i class="bi bi-github"></i></button></a>
                             <a href="https://www.linkedin.com/in/marcosssbento/"><button><i class="bi bi-linkedin"></i></button></a>
@@ -103,18 +127,20 @@
             </div>
         </section><!-- sobre -->
 
-        <section class ="projetos">
+        <section class ="projetos" id="projetos">
             <div class="interface">
-                <h2 class = "titulo">MEUS <span>PROJETOS.</span></h2>
+                <h2 class = "titulo">MEUS <span>PROJETOS:</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/fotoSgev.png);">
+                    <a href="https://github.com/marcossbento/projetoSistemaGerenciamento"><div class="img-port" style="background-image: url(images/fotoSgev.png);">
                         <div class="overlay"> Gerenciador de Estoque </div>
+                        <img src="images/java.png" alt="Java" class="linguagem">
+                        <img src="images/mySql.png" alt="MySql" class="linguagem">
+                    </div></a>
+                    <div class="img-port" style="background-image: url(images/em-Breve.png);">
+                        <div class="overlay"> Em desenvolvimento </div>
                     </div>
                     <div class="img-port" style="background-image: url(images/em-Breve.png);">
-                        <div class="overlay"> Em produção </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(images/em-Breve.png);">
-                        <div class="overlay"> Em produção </div>
+                        <div class="overlay"> Em desenvolvimento </div>
                     </div>
             </div>
         </section><!-- projetos -->
