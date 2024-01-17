@@ -430,7 +430,7 @@ section.projetos .flex{
     }
 
     .topo-do-site h1{
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .topo-do-site .img-topo-site img{
@@ -447,19 +447,25 @@ section.projetos .flex{
         padding: 80px 8%;
     }
 
+    .sobre .flex{
+        align-items: center;
+    }
+
     .sobre .txt-sobre h2{
         font-size: 32px;
         line-height: 35px;
-        text-align: center;
+        text-align: left;
     }
 
     .btn-social {
         text-align: center;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         width: 100%;
-    }
+        max-width: 250px;
+        margin: 0 auto;
+        }
 
     /* PROJETOS */
     section.projetos {
