@@ -385,14 +385,23 @@ section.projetos .flex{
     opacity: 1;
 }
 
-/* .linguagem{
-    display: flex; 
-    align-items: center;
-    justify-content: space-evenly;
-    width: 40px;
-    opacity: 80%;
-    margin-left: 20px;
-} */
+/* BUTTON CIMA */
+
+.backtotop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: .5s;
+}
+
+.backtotop:hover{
+    transform: scale(1.1);
+}
+
+.back-to-top img{
+width: 60px;
+
+}
 
 @media screen and (max-width: 1020px) {
     /* CLASSES GERAIS */
