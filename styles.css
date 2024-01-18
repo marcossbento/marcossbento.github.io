@@ -434,7 +434,8 @@ section.projetos .flex{
     }
 
     .topo-do-site .img-topo-site img{
-        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     /* SKILLS */
@@ -444,7 +445,7 @@ section.projetos .flex{
     
     /* SOBRE */
     section.sobre {
-        padding: 80px 8%;
+        padding: 80px 4%;
     }
 
     .sobre .flex{
@@ -455,6 +456,10 @@ section.projetos .flex{
         font-size: 32px;
         line-height: 35px;
         text-align: left;
+    }
+
+    .sobre .txt-sobre{
+        width: 80%;
     }
 
     .btn-social {

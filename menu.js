@@ -15,3 +15,9 @@ overlay.addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
 })
 
+const downloadButton = document.getElementById('downloadButton');
+downloadButton.addEventListener('click', downloadFile);
+
+function downloadFile() {
+    window.open('images/CurriculumMarcosBento.pdf');
+}
