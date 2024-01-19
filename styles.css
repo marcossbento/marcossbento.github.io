@@ -101,6 +101,10 @@ header nav.menu-desktop ul li{
     padding: 0 40px;
 }
 
+header img{
+    border-radius: 100%;
+}
+
 
 
 
@@ -210,6 +214,8 @@ section.topo-do-site .flex{
 
 .topo-do-site .img-topo-site img{
     position: relative;
+    max-width: 400px;
+    border-radius: 100%;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
@@ -391,7 +397,14 @@ section.projetos .flex{
     position: fixed;
     bottom: 40px;
     right: 40px;
-    transition: .5s;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: none;
+}
+
+.backtotop.show {
+    display: block;
+    opacity: 1;
 }
 
 .backtotop:hover{
