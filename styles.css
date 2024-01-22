@@ -192,14 +192,15 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
+    font-family: 'Roboto Mono', monospace;
     font-size: 42px;
     color: #fff;
     line-height: 40px;
-    border-right: 4px solid aqua;
+    border-right: 5px solid aqua;
     width: 0;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 6s steps(12) infinite,
+    animation: typing 6s steps(13) infinite,
     blinking 0.5s infinite step-end alternate;
 }
 
@@ -229,20 +230,12 @@ section.topo-do-site .flex{
 }
 
 @keyframes typing {
-    20% {
-        width: 12ch
+    20%, 70% {
+        width: 13ch;
     }
 
-    70% {
-        width: 12ch
-    }
-
-    85% {
-        width: 0
-    }
-
-    100% {
-        width: 0
+    85%, 100% {
+        width: 0;
     }
 }
 
