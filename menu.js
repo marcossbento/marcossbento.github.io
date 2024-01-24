@@ -33,6 +33,7 @@ function downloadFile() {
     window.open('images/CurriculumMarcosBento.pdf');
 }
 
+// Skills carousel logic
 const scrollers = document.querySelectorAll(".logos");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -41,20 +42,32 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
 function addAnimation() {
     scrollers.forEach((scroller) => {
-      // add data-animated="true" to every `.scroller` on the page
       scroller.setAttribute("data-animated", true);
   
-      // Make an array from the elements within `.scroller-inner`
       const scrollerInner = scroller.querySelector(".logos-slide");
       const scrollerContent = Array.from(scrollerInner.children);
   
-      // For each item in the array, clone it
-      // add aria-hidden to it
-      // add it into the `.scroller-inner`
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         duplicatedItem.setAttribute("aria-hidden", true);
         scrollerInner.appendChild(duplicatedItem);
       });
     });
-  }
+}
+// End Skills carousel logic
+
+// Projects observer logic
+
+var imgPorts = document.querySelectorAll('.img-port');
+
+imgPorts.forEach(function(imgPort) {
+    var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+            imgPort.classList.add('animate');
+        } else {
+            imgPort.classList.remove('animate');
+        }
+    }, { threshold: 0.7 });
+
+    observer.observe(imgPort);
+});
