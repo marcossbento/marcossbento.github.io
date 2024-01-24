@@ -370,10 +370,14 @@ section.projetos .flex{
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: background-position 1s ease-in-out;
+    transition: background-position 1s ease-in-out, transform 2s ease-in-out;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+}
+
+.img-port:hover{
+    transform: scale(1.05);
 }
 
 .img-port.animate {
@@ -383,7 +387,7 @@ section.projetos .flex{
 
 .img-port.animate .overlay {
     opacity: 1;
-    box-shadow: 0px 0px 8px #fff;
+    box-shadow: 0px 0px 8px #ffffff54;
     transition: opacity 1.5s ease-in-out, transform .5s ease-in-out;
 }
 
@@ -410,7 +414,7 @@ section.projetos .flex{
 .overlay:hover{
     color: #fff;
     box-shadow: 0px 0px 1px #fff;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 1.5s;
 }
 
@@ -418,15 +422,16 @@ section.projetos .flex{
     width: 80px;
 }
 
-/* BUTTON CIMA */
+/* BUTTON TO TOP */
 
 .backtotop{
     position: fixed;
     bottom: 40px;
     right: 40px;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
-    display: none;
+    /* transition: opacity 2s ease-in-out; */
+    display: flex;
+    animation: flutuar-btn 1.5s ease-in-out infinite alternate;
 }
 
 .backtotop.show {
@@ -441,6 +446,15 @@ section.projetos .flex{
 .back-to-top img{
 width: 60px;
 
+}
+
+@keyframes flutuar-btn {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 1020px) {

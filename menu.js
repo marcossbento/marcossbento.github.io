@@ -16,10 +16,10 @@ overlay.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
+    var topoDoSite = document.querySelector('.topo-do-site');
     var button = document.querySelector('.backtotop');
 
-    if (window.pageYOffset > header.offsetHeight) {
+    if (window.pageYOffset > topoDoSite.offsetHeight) {
         button.classList.add('show');
     } else {
         button.classList.remove('show');
