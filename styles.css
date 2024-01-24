@@ -209,6 +209,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site p{
+    font-size: 20px;
     color: #fff;
     margin: 40px 0;
 }
@@ -250,35 +251,59 @@ section.skills{
     padding: 40px 4%;
 }
 
+section.skills .interface h2 {
+    padding: 40px;
+}
+
 section.skills .interface h2 span{
     color: aqua;
 }
 
-section.skills .flex{
-    gap: 60px;
+.logos {
+    max-width: max-content;
+    height: auto;
 }
 
-.skills .skills-box{
-    color: #ffffffd3;
-    padding: 40px 4%;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
+.logos-slide{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.skills .skills-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff77;
+.logos[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%
+        white 80%,  
+        transparent
+    );
+
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.skills .skills-box i{
-    font-size: 70px;
-    color:#ffffff
+.logos[data-animated="true"] .logos-slide {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: slide var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
-.skills .skills-box h3{
-    font-size: 28px;
-    margin: 20px 0;
+.logos-slide img {
+    height: 100px;
+    margin: 0px 40px;
+}
+
+@keyframes slide {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+      }
+}
+
+.logos[data-speed="fast"] {
+    --_animation-duration: 20s;
 }
 
 /* SOBRE STYLES */
@@ -453,9 +478,21 @@ width: 60px;
         margin: 0 auto;
     }
 
+    /* .topo-do-site .txt-topo-site p{
+        font-size: 15px;
+    } */
+
     /* SKILLS */
     section.skills{
         padding: 40px 8%;
+    }
+
+    .logos-slide img{
+        margin: 0px 20px;
+    }
+
+    .logos[data-speed="fast"] {
+        --_animation-duration: 15s;
     }
     
     /* SOBRE */
