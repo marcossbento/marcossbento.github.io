@@ -470,17 +470,17 @@ width: 60px;
     }
 
     .topo-do-site h1{
-        font-size: 34px;
+        font-size: 44px;
+    }
+
+    .topo-do-site .txt-topo-site p{
+        font-size: 30px;
     }
 
     .topo-do-site .img-topo-site img{
         max-width: 300px;
         margin: 0 auto;
     }
-
-    /* .topo-do-site .txt-topo-site p{
-        font-size: 15px;
-    } */
 
     /* SKILLS */
     section.skills{
@@ -514,8 +514,9 @@ width: 60px;
         width: 80%;
     }
 
-    .btn-social {
-        text-align: center;
+    .sobre .txt-sobre .btn-social button{
+        width: 80px;
+        height: 80px;
     }
 
     .img-sobre img {
