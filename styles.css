@@ -300,6 +300,9 @@ section .sobre .flex{
     gap: 60px;
 }
 
+.sobre .interface {
+    max-width: 1400px;
+}
 
 
 .sobre .txt-sobre{
@@ -324,16 +327,24 @@ section .sobre .flex{
     text-align: justify;
 }
 
+.sobre .txt-sobre .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
+    max-width: 1440px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: none;
     background-color: #ede6df;
-    font-size: 22px;
+    font-size: 32px;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 10px;
     transition: .4s;
+    
 }
 
 /* PROJETOS STYLES */
@@ -433,7 +444,6 @@ section.projetos .flex{
 
 .backtotop i{
     font-size: 50px;
-
 }
 
 @keyframes flutuar-btn {
@@ -526,15 +536,19 @@ section.projetos .flex{
     }
 
     .sobre .txt-sobre .btn-social button{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .img-sobre img {
         width: 100%;
         max-width: 250px;
         margin: 0 auto;
-        }
+    }
+
+    .backtotop i{
+        font-size: 150px;
+    }
 
     /* PROJETOS */
     section.projetos {
