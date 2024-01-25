@@ -297,7 +297,7 @@ section.sobre{
 
 section .sobre .flex{
     align-items: center;
-    gap: 60px;
+    gap: 70px;
 }
 
 .sobre .interface {
@@ -307,8 +307,7 @@ section .sobre .flex{
 
 .sobre .txt-sobre{
     color: #d6c4b0;
-    width: 50%;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .sobre .txt-sobre h2{
@@ -335,12 +334,12 @@ section .sobre .flex{
 
 .sobre .txt-sobre .btn-social button{
     max-width: 1440px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: none;
     background-color: #ede6df;
-    font-size: 32px;
+    font-size: 20px;
     cursor: pointer;
     margin: 0 10px;
     transition: .4s;
@@ -422,9 +421,12 @@ section.projetos .flex{
 
 /* BUTTON TO TOP */
 
-.backtotop{
+.backtotop {
     position: fixed;
     color: aqua;
+    width: max-content;
+    height: max-content;
+    border-radius: 50%;
     bottom: 40px;
     right: 40px;
     opacity: 0;
@@ -444,6 +446,7 @@ section.projetos .flex{
 
 .backtotop i{
     font-size: 50px;
+
 }
 
 @keyframes flutuar-btn {
@@ -492,10 +495,12 @@ section.projetos .flex{
 
     .topo-do-site h1{
         font-size: 44px;
+        text-align: center;
     }
 
     .topo-do-site .txt-topo-site p{
-        font-size: 30px;
+        font-size: 35px;
+        text-align: center;
     }
 
     .topo-do-site .img-topo-site img{
@@ -536,8 +541,8 @@ section.projetos .flex{
     }
 
     .sobre .txt-sobre .btn-social button{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
 
     .img-sobre img {
@@ -547,7 +552,7 @@ section.projetos .flex{
     }
 
     .backtotop i{
-        font-size: 150px;
+        font-size: 50px;
     }
 
     /* PROJETOS */
