@@ -82,7 +82,7 @@ header nav.menu-desktop a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: aqua; /* adjust as needed */
+    background: aqua;
     transition: width .3s;
 }
 
