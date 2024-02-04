@@ -355,6 +355,12 @@ section .sobre .flex{
     margin-bottom: 30px;
     text-align: justify;
     font-weight: 300;
+    font-size: 20px;
+}
+
+.sobre .txt-sobre p span{
+    color: aqua;
+    font-weight: 600;
 }
 
 .sobre .txt-sobre .btn-social {
