@@ -332,9 +332,15 @@ section .sobre .flex{
     max-width: 1400px;
 }
 
+.sobre .img-sobre img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 40px;
+    transition: .5s;
+}
 
 .sobre .txt-sobre{
-    color: #d6c4b0;
+    color: #ffffff;
     margin-left: 20px;
 }
 
